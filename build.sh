@@ -4,6 +4,8 @@ wget -c https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk
 tar xf OpenJDK11U-jdk_x64_linux_hotspot_2019-10-16-10-43.tar.gz 
 
 echo "Download and build Newton Adventure"
+git clone https://github.com/devnewton/jnuit.git jnuit
+(cd jnuit; mvn install)
 git clone https://github.com/devnewton/newton_adventure.git newton_adventure
 (cd newton_adventure; mvn package)
 cp newton_adventure/game/lwjgl/target/newton-adventure.jar NewtonAdventure.AppDir/
