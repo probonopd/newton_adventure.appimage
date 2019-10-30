@@ -3,10 +3,10 @@ sudo: require
 dist: trusty
 
 script:
+  - sudo apt-get -y install maven
   - bash -ex build.sh
 
 after_success:
-  - sudo apt-get -y install maven
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
   - bash upload.sh ./out/*
   
