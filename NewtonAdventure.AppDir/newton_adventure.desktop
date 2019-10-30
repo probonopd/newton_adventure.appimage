@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Newton Adventure
-Icon=newton-adventure
+Icon=newton_adventure
 Exec=newton-adventure
 Categories=Game;
