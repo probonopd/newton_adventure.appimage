@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 echo "Download bundable opendjk"
 wget -c https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk11u-2019-10-16-10-43/OpenJDK11U-jdk_x64_linux_hotspot_2019-10-16-10-43.tar.gz
 tar xf OpenJDK11U-jdk_x64_linux_hotspot_2019-10-16-10-43.tar.gz 
@@ -14,4 +14,4 @@ NEWTON_ADVENTURE_DEPS=`./jdk-11.0.5+9/bin/jdeps --print-module-deps newton_adven
 
 wget -c https://github.com/AppImage/AppImageKit/releases/download/12/appimagetool-x86_64.AppImage
 chmod +x appimagetool-x86_64.AppImage 
-./appimagetool-x86_64.AppImage NewtonAdventure.AppDir/
+ARCH=x86_64 ./appimagetool-x86_64.AppImage NewtonAdventure.AppDir/
