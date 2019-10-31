@@ -1,8 +1,1 @@
-Newton_Adventure-x86_64.AppImage
-OpenJDK11U-jdk_x64_linux_hotspot_2019-10-31-00-22.tar.gz
-appimagetool-x86_64.AppImage
-jdk-11.0.5+9/
-jnuit/
-newton_adventure/
-NewtonAdventure.AppDir/newton-adventure.jar
-NewtonAdventure.AppDir/usr/
+build/
