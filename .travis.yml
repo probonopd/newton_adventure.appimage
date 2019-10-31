@@ -1,0 +1,8 @@
+language: bash
+sudo: require
+dist: bionic
+
+script:
+  - sudo apt-get -y install openjdk-11-jdk maven
+  - bash -ex build.sh
+
