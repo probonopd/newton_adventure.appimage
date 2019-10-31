@@ -11,7 +11,6 @@ git clone https://github.com/devnewton/newton_adventure.git newton_adventure
 cp newton_adventure/game/lwjgl/target/newton-adventure-lwjgl-1.17-SNAPSHOT.jar NewtonAdventure.AppDir/newton-adventure.jar
 
 echo "Build custom jdk"
-mkdir NewtonAdventure.AppDir/usr
 NEWTON_ADVENTURE_DEPS=`./jdk-11.0.5+9/bin/jdeps --print-module-deps NewtonAdventure.AppDir/newton-adventure.jar`
 ./jdk-11.0.5+9/bin/jlink --no-header-files --no-man-pages --compress=2 --strip-debug --add-modules $NEWTON_ADVENTURE_DEPS --output NewtonAdventure.AppDir/usr
 
